@@ -1,7 +1,9 @@
 var carton = require('carton');
+var appDir = path.dirname(require.main.filename);
 
 //Load configuration file
 carton.cfg.load('./cfg/' + process.env.NODE_ENV + '.json');
+carton.setAppDir(carton.cfg.get('appdir'));
 
 //Load modules
 carton.add(require('./modules/logger'));
