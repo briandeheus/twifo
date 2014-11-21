@@ -10,3 +10,17 @@ winston.add(winston.transports.Console, {
 
 module.exports = winston;
 module.exports.name = 'logger';
+module.exports.create = function (type) {
+
+	winston.loggers.add(type, { console: {
+
+		'colorize':true, 
+		'timestamp': true,
+		'level': carton.cfg.get('logger.level'),
+		'label': type
+
+	}});
+
+	return winston.loggers.get(type);
+	
+}
