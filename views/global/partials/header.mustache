@@ -7,8 +7,29 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="/static/css/main.css">
 
     </head>
-    <body>
+    <body>       
+    <div class="container-fluid headerWrapper">
+        <div class="container">
+             <div class="row header">
+                <div class="col-xs-6">
+                    <a href="/"><span class="title">{{{settings.title}}}</span></a>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <a class="btn btn-xs btn-default" href="/thread/create">New thread</a> 
+
+                    Hey there, {{user.screenname}}<img class="img-avatar img-rounded" src="{{{user.avatar}}}">
+                </div>
+                
+            </div>
+        </div>
+    </div>

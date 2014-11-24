@@ -1,4 +1,77 @@
 html,
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+p {
+	white-space: pre-wrap;
+}
+
+a {
+	color: #333;
+}
+
+.headerWrapper {
+	border-bottom: 1px solid #888;
+	margin-bottom: 20px;
+}
+
+.header {
+	padding: 5px 0;
+	display: flex;
+	align-items: baseline;
+}
+
+.header .title {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.header .img-avatar {
+	height: 30px;
+	width: 30px;
+	vertical-align: bottom;
+	margin-left: 5px;
+}
+
+.topicRow {
+
+	padding-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+
+}
+
+.thread {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+	cursor: pointer;
+}
+
+.thread:hover {
+	background-color: rgba(220, 220, 220, 0.1);
+}
+
+.label-cool {
+	color: black;
+	border: 1px solid black;
+	margin: 0 2px;
+}
+
+.postWrapper {
+	margin-bottom: 20px;
+}
+
+.post {
+	border: 1px solid #aaa;
+	padding-top: 5px;
+	border-radius: 5px;
+}
+
+.addPostField {
+	padding: 0;
+}
+
+.postForm {
+	margin-bottom: 10px;
 }

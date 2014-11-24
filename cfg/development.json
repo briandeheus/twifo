@@ -1,9 +1,27 @@
 {
+	"bbsettings": {
+		"title": "Bulletin Board"
+	},
 	"server": {
-		"port": 9011,
-		"secret": "this_is_not_a_good_secret"
+		"port": 9040,
+		"secret": "this_is_not_a_good_secret",
+		"url": "twifo.at.dev1.brian.jp",
+		"protocol": "http"
 	},
 	"logger": {
 		"level": "verbose"
+	},
+	"redis": {
+		"host": "192.168.0.100"
+	},
+	"mysql": {
+		"host": "192.168.0.100",
+		"user": "twifo",
+		"password": "twifopass",
+		"database": "twifo"
+	},
+	"twitter": {
+		"key": "uWzOUAGibel0gwbGX48o8RjrM",
+		"secret": "ZwZ5e0SEgmBQA6VHQ5Z9omSG2EtKRsUfqoS3YAJ6C4TUFUJsC4"
 	}
 }
