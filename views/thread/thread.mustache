@@ -1,0 +1,45 @@
+{{> global/partials/header}}
+
+    <div class="container">
+    <div class="row">
+	    <div class="col-xs-12">
+	    	<h3>{{thread.topic}} > {{thread.title}} <small>{{thread.lastUpdate}}</small></h3>
+	    </div>
+	</div>
+
+	<div class="row postWrapper">
+		<div class="col-xs-2 text-right">
+			<img src="{{thread.avatar}}" class="img-rounded"></br>
+		</div>
+		<div class="col-xs-10 post">
+			<b>{{thread.username}}</b> posted this at {{thread.creationTime}}
+			<p>{{thread.body}}</p>
+		</div>
+	</div>
+
+	{{{posts}}}
+	<div id="newPostWrapper">
+
+	</div>
+	<div class="row">
+
+		<div class="col-xs-offset-2 col-xs-10">
+		
+		</div>
+		<div class="col-xs-2 text-right">
+			<img src="{{user.avatar}}" class="img-rounded"></br>
+		</div>
+		<div class="col-xs-10 addPostField">
+			<textarea id="post" name="post" width="100%" class="form-control postForm" rows="4"></textarea>
+			<button id="submit" type="submit" class="btn btn-default">Add Reply</button>
+		</div>
+
+	</div>
+	<script>
+
+		window.threadid = {{thread.tid}};
+		window.useravi  = "{{{thread.avatar}}}";
+
+	</script>
+	<script src="/static/js/addReply.js"></script>
+{{> global/partials/footer}}

@@ -1,2 +1,4 @@
 /node_modules
 webserver.conf
+/cfg/development.json
+/cfg/production.json

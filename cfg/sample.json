@@ -5,23 +5,23 @@
 	"server": {
 		"port": 9040,
 		"secret": "this_is_not_a_good_secret",
-		"url": "twifo.at.dev1.brian.jp",
+		"url": "example.org",
 		"protocol": "http"
 	},
 	"logger": {
 		"level": "verbose"
 	},
 	"redis": {
-		"host": "192.168.0.100"
+		"host": "localhost"
 	},
 	"mysql": {
-		"host": "192.168.0.100",
+		"host": "localhost",
 		"user": "twifo",
-		"password": "twifopass",
+		"password": "twifo",
 		"database": "twifo"
 	},
 	"twitter": {
-		"key": "uWzOUAGibel0gwbGX48o8RjrM",
-		"secret": "ZwZ5e0SEgmBQA6VHQ5Z9omSG2EtKRsUfqoS3YAJ6C4TUFUJsC4"
+		"key": "thisisyourkey",
+		"secret": "thisisyoursecret"
 	}
 }
