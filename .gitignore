@@ -2,3 +2,5 @@
 webserver.conf
 /cfg/development.json
 /cfg/production.json
+/app/waffle.json
+/static/app

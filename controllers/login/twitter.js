@@ -122,6 +122,7 @@ server.get('/login/twitter', function (req, res) {
 				res.send(500, carton.error.make(500, 'We were unable to authenticate you.'));
 			}
 
+			console.log('DATA:', data);
 			res.redirect(data);
 
 		});

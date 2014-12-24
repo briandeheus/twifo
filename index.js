@@ -34,15 +34,15 @@ carton.setup(function (error) {
 
 		next();
 
-	});	
+	});
 
-	require('./controllers/home');
+	require('./controllers/api');
+	require('./controllers/api/threads/all');
+	require('./controllers/api/threads/one');
+
+	require('./controllers/api/topics/all');
 	require('./controllers/login/twitter');
 	
-	require('./controllers/thread/create');
-	require('./controllers/thread/view');
-
-	require('./controllers/post/add');
 
 	carton.logger.info('Carton started up in', Date.now() - then, 'ms');
 

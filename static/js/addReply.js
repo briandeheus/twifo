@@ -1,5 +1,5 @@
 (function (window) {
-
+	
 	var post = $('#post');
 	var btn  = $('#submit');
 	var newPostWrapper = $('#newPostWrapper');

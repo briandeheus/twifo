@@ -11,6 +11,11 @@ a {
 	color: #333;
 }
 
+footer {
+	text-align: center;
+	margin: 20px 0;
+}
+
 .headerWrapper {
 	border-bottom: 1px solid #888;
 	margin-bottom: 20px;

@@ -21,7 +21,16 @@ exports.getLatest = function (from, to, topic, cb) {
 
 exports.getOne = function (id, cb) {
 
-	var sql = 'SELECT *, `threads`.`id` AS `tid`, `topics`.`name` AS `topic` FROM `threads` LEFT JOIN `topics` ON `topics`.`slug` = `threads`.`topic` LEFT JOIN `users` ON `users`.`id` = `threads`.`owner` WHERE `threads`.`id` = ?';
+	var sql = 'SELECT' +
+	'`threads`.title,' +
+	'`threads`.`body`,' +
+	'`threads`.`lastUpdate`, '+
+	'`threads`.`id` AS `tid`,'+
+	'`users`.`screenname`,'+
+	'`users`.`avatar`,'+
+	'`topics`.`name` AS `topic` '+
+	'FROM `threads` LEFT JOIN `topics` ON `topics`.`slug` = `threads`.`topic` LEFT JOIN `users` ON `users`.`id` = `threads`.`owner` WHERE `threads`.`id` = ?';
+	
 	mysql.query(sql, [id], function (error, data) {
 
 		if (error) {
